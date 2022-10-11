@@ -1,15 +1,25 @@
-# Preguntar al usuario por la renta
-renta = float(input("¿Cuál es tu renta anual? "))
-# Condicional para determinar el tipo impositivo dependiendo de la renta
-if renta < 10000:
-    tipo = 5
-elif renta < 20000:
-    tipo = 15
-elif renta < 35000:
-    tipo = 20
-elif renta < 60000:
-    tipo = 30
-else:
-    tipo = 45
-# Mostrar por pantalla el producto de la renta por el tipo impositivo
-print("Tienes que pagar ", renta * tipo / 100, "$", sep='')
+'''
+Autor:Edgar Francisco Hernandez Mendez
+Fecha:11/10/2022
+Actividad: El Tremento sat
+'''
+
+
+
+dinero = int(input("Ingrese la cantidad de dinero: "))
+
+if dinero < 10000 :
+    impuesto = dinero*.05+dinero 
+    print (impuesto)
+if dinero <= 20000:
+    impuesto = dinero*.15+dinero
+    print (impuesto)
+if dinero <= 35000:
+    impuesto = dinero*.20+dinero
+    print (impuesto)
+if dinero <= 60000:
+    impuesto = dinero*.30+dinero
+    print (impuesto)
+if dinero > 60000:
+    impuesto = dinero*.45+dinero
+    print (impuesto)
